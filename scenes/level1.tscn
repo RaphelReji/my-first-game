@@ -220,7 +220,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1pfk3"]
-size = Vector2(13, 26)
+size = Vector2(14.625, 28.5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u3awl"]
 atlas = ExtResource("10_d3jkd")
@@ -463,17 +463,17 @@ text = "Enter level 2"
 horizontal_alignment = 1
 
 [node name="LevelExit" type="Area2D" parent="." unique_id=972823755]
-position = Vector2(2, 2)
+position = Vector2(1335, -49)
 collision_mask = 2
 script = ExtResource("10_u3awl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelExit" unique_id=844023930]
-position = Vector2(1333.5, -50)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_1pfk3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="LevelExit" unique_id=880476718]
-position = Vector2(1332, -49.999996)
-scale = Vector2(1.25, 0.96875)
+position = Vector2(-1.0000029, 0.9999919)
+scale = Vector2(1.609375, 1.0273432)
 sprite_frames = SubResource("SpriteFrames_1pfk3")
 animation = &"portal"
 autoplay = "portal"
