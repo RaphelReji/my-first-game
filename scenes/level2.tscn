@@ -285,10 +285,10 @@ unique_name_in_owner = true
 script = ExtResource("1_xa7n4")
 
 [node name="ScoreLabel" type="Label" parent="GameManager" unique_id=449216631]
-offset_left = 1208.0
-offset_top = -390.0
-offset_right = 1307.0
-offset_bottom = -363.0
+offset_left = 1491.0
+offset_top = -428.0
+offset_right = 1664.0
+offset_bottom = -420.0
 theme_override_colors/font_color = Color(0.011764706, 0.14901961, 0.34901962, 1)
 theme_override_fonts/font = ExtResource("2_bo4dx")
 theme_override_font_sizes/font_size = 8
@@ -318,7 +318,46 @@ position_smoothing_enabled = true
 [node name="Coins" type="Node" parent="." unique_id=52254628]
 
 [node name="Coin" parent="Coins" unique_id=194149493 instance=ExtResource("5_56gwk")]
-position = Vector2(115, -24)
+position = Vector2(117, -21)
+
+[node name="Coin7" parent="Coins" unique_id=199623452 instance=ExtResource("5_56gwk")]
+position = Vector2(339, -15)
+
+[node name="Coin5" parent="Coins" unique_id=775229959 instance=ExtResource("5_56gwk")]
+position = Vector2(323, -26)
+
+[node name="Coin6" parent="Coins" unique_id=6943712 instance=ExtResource("5_56gwk")]
+position = Vector2(308, -16)
+
+[node name="Coin2" parent="Coins" unique_id=353254397 instance=ExtResource("5_56gwk")]
+position = Vector2(456, -58)
+
+[node name="Coin3" parent="Coins" unique_id=561466055 instance=ExtResource("5_56gwk")]
+position = Vector2(714, -41)
+
+[node name="Coin10" parent="Coins" unique_id=775869982 instance=ExtResource("5_56gwk")]
+position = Vector2(1106, -88)
+
+[node name="Coin14" parent="Coins" unique_id=1358557145 instance=ExtResource("5_56gwk")]
+position = Vector2(1253, -266)
+
+[node name="Coin11" parent="Coins" unique_id=888208321 instance=ExtResource("5_56gwk")]
+position = Vector2(1252, -248)
+
+[node name="Coin12" parent="Coins" unique_id=2016754802 instance=ExtResource("5_56gwk")]
+position = Vector2(1219, -217)
+
+[node name="Coin13" parent="Coins" unique_id=657858034 instance=ExtResource("5_56gwk")]
+position = Vector2(1250, -187)
+
+[node name="Coin8" parent="Coins" unique_id=729978177 instance=ExtResource("5_56gwk")]
+position = Vector2(1089, -89)
+
+[node name="Coin9" parent="Coins" unique_id=1846997900 instance=ExtResource("5_56gwk")]
+position = Vector2(1009, -119)
+
+[node name="Coin4" parent="Coins" unique_id=1079939188 instance=ExtResource("5_56gwk")]
+position = Vector2(433, -58)
 
 [node name="Killzone" parent="." unique_id=2049498990 instance=ExtResource("6_ve5ok")]
 position = Vector2(95, 147)
@@ -348,20 +387,20 @@ position = Vector2(493, -45)
 [node name="Labels" type="Node" parent="." unique_id=191746949]
 
 [node name="Label" type="Label" parent="Labels" unique_id=1761991532]
-offset_left = -254.0
-offset_top = -114.0
-offset_right = -168.0
-offset_bottom = -102.0
+offset_left = -17.0
+offset_top = -174.0
+offset_right = 69.0
+offset_bottom = -162.0
 theme_override_colors/font_color = Color(0.011764706, 0.14901961, 0.34901962, 1)
 theme_override_fonts/font = ExtResource("9_g8vcy")
 theme_override_font_sizes/font_size = 8
 text = "Space to jump"
 
 [node name="Label2" type="Label" parent="Labels" unique_id=870066818]
-offset_left = -284.0
-offset_top = -174.0
-offset_right = -144.0
-offset_bottom = -162.0
+offset_left = -53.0
+offset_top = -206.0
+offset_right = 87.0
+offset_bottom = -194.0
 theme_override_colors/font_color = Color(0.011764706, 0.14901961, 0.34901962, 1)
 theme_override_fonts/font = ExtResource("9_g8vcy")
 theme_override_font_sizes/font_size = 8
@@ -398,24 +437,34 @@ theme_override_font_sizes/font_size = 8
 text = "Falling hurts. . ."
 
 [node name="Label6" type="Label" parent="Labels" unique_id=1638267645]
-offset_left = 1183.0
-offset_top = -344.0
-offset_right = 1353.0
-offset_bottom = -333.0
+offset_left = 1493.0
+offset_top = -442.0
+offset_right = 1664.0
+offset_bottom = -431.0
 theme_override_colors/font_color = Color(0.011764706, 0.14901961, 0.34901962, 1)
 theme_override_fonts/font = ExtResource("9_g8vcy")
 theme_override_font_sizes/font_size = 8
-text = "You completed the 1st level"
+text = "You completed the 2nd level"
 
 [node name="Label7" type="Label" parent="Labels" unique_id=242455176]
-offset_left = 1975.0
-offset_top = -381.0
-offset_right = 2025.0
-offset_bottom = -371.0
+offset_left = 1788.0
+offset_top = -490.0
+offset_right = 1887.0
+offset_bottom = -480.0
 theme_override_colors/font_color = Color(0.011764706, 0.14901961, 0.34901962, 1)
 theme_override_fonts/font = ExtResource("2_bo4dx")
 theme_override_font_sizes/font_size = 8
-text = "Level 2"
+text = "Level 3 portal"
+
+[node name="Label8" type="Label" parent="Labels" unique_id=812889178]
+offset_left = 1513.0
+offset_top = -411.0
+offset_right = 1661.0
+offset_bottom = -403.0
+theme_override_colors/font_color = Color(0.24590579, 0.15922064, 0.06772399, 1)
+theme_override_fonts/font = ExtResource("9_g8vcy")
+theme_override_font_sizes/font_size = 8
+text = " Go forward for Level 3 "
 
 [node name="LevelExit" type="Area2D" parent="." unique_id=932958453]
 position = Vector2(1933.0001, -463)
