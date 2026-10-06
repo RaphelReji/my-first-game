@@ -466,6 +466,7 @@ horizontal_alignment = 1
 position = Vector2(1335, -49)
 collision_mask = 2
 script = ExtResource("10_u3awl")
+next_level = "uid://biodmv7bdp7iu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelExit" unique_id=844023930]
 position = Vector2(1, 0)

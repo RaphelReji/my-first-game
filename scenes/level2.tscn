@@ -422,6 +422,7 @@ position = Vector2(1933.0001, -463)
 scale = Vector2(0.99675536, 1.0654341)
 collision_mask = 2
 script = ExtResource("10_76toy")
+next_level = "uid://bg0gi6mq5eqwd"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelExit" unique_id=591493338]
 position = Vector2(-3.135254, 1.5252075)
@@ -433,6 +434,6 @@ scale = Vector2(0.88072515, 1.3625189)
 sprite_frames = SubResource("SpriteFrames_ve5ok")
 animation = &"portal"
 autoplay = "portal"
-frame_progress = 0.11053283
+frame_progress = 0.5184314
 
 [connection signal="body_entered" from="LevelExit" to="LevelExit" method="_on_body_entered"]
