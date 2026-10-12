@@ -13,7 +13,7 @@
 [ext_resource type="Script" uid="uid://natleg4x2kes" path="res://scripts/level_exit.gd" id="10_u3awl"]
 [ext_resource type="Script" uid="uid://bd3g63votku2a" path="res://scripts/game_ui.gd" id="12_2ku1j"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2ku1j"]
 texture = ExtResource("2_yqjtg")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -177,7 +177,7 @@ texture = ExtResource("2_yqjtg")
 
 [sub_resource type="TileSet" id="TileSet_uwrxv"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_lnu2h")
+sources/0 = SubResource("TileSetAtlasSource_2ku1j")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1pfk3"]
 distance = 32.0
@@ -489,7 +489,7 @@ offset_left = 11.0
 offset_top = 13.0
 offset_right = 131.0
 offset_bottom = 53.0
-text = "Levels"
+text = "Menu"
 
 [connection signal="body_entered" from="LevelExit" to="Player" method="_on_level_exit_body_entered"]
 [connection signal="body_entered" from="LevelExit" to="LevelExit" method="_on_body_entered"]

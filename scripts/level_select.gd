@@ -15,3 +15,15 @@ func _on_level_1_button_pressed() -> void:
 
 func _on_level_2_button_pressed() -> void:
 	open_level(2)
+
+
+func _on_level_3_button_pressed() -> void:
+	open_level(3)
+
+
+func _on_level_4_button_pressed() -> void:
+	open_level(4)
+
+
+func _on_level_5_button_pressed() -> void:
+	open_level(5)

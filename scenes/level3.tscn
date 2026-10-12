@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://natleg4x2kes" path="res://scripts/level_exit.gd" id="10_6uuvf"]
 [ext_resource type="Texture2D" uid="uid://bvnmrlydue5n4" path="res://assets/sprites/portal.png" id="11_x008a"]
 [ext_resource type="PackedScene" uid="uid://g010j8fre56t" path="res://scenes/slime_2.tscn" id="12_qewby"]
+[ext_resource type="Script" uid="uid://bd3g63votku2a" path="res://scripts/game_ui.gd" id="14_got4s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("3_bradm")
@@ -666,5 +667,16 @@ position = Vector2(632, -76)
 [node name="Slime3" parent="slimes" unique_id=1518493654 instance=ExtResource("12_qewby")]
 position = Vector2(1175, -216)
 
+[node name="GameUI" type="CanvasLayer" parent="." unique_id=91655356]
+script = ExtResource("14_got4s")
+
+[node name="SelectLevelButton" type="Button" parent="GameUI" unique_id=1254040842]
+offset_left = 11.0
+offset_top = 13.0
+offset_right = 131.0
+offset_bottom = 53.0
+text = "Menu"
+
 [connection signal="body_entered" from="LevelExit" to="Player" method="_on_level_exit_body_entered"]
 [connection signal="body_entered" from="LevelExit" to="LevelExit" method="_on_body_entered"]
+[connection signal="pressed" from="GameUI/SelectLevelButton" to="GameUI" method="_on_select_level_button_pressed"]
