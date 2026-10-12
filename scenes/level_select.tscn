@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b7ci2fo80p607"]
+
+[ext_resource type="Script" uid="uid://bbt3pg1sw1m1j" path="res://scripts/level_select.gd" id="1_3shnc"]
+
+[node name="LevelSelect" type="Control" unique_id=420605891]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3shnc")
+
+[node name="Title" type="Label" parent="." unique_id=1206005374]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "SELECT LEVEL"
+
+[node name="LevelGrid" type="GridContainer" parent="." unique_id=2070522732]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 150.0
+offset_right = 140.0
+offset_bottom = 190.0
+columns = 4
+
+[node name="Level1Button" type="Button" parent="LevelGrid" unique_id=542705825]
+layout_mode = 2
+text = "Level 1
+"
+
+[node name="Level2Button" type="Button" parent="LevelGrid" unique_id=1399165320]
+layout_mode = 2
+text = "Level 2"
+
+[connection signal="pressed" from="LevelGrid/Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="LevelGrid/Level2Button" to="." method="_on_level_2_button_pressed"]

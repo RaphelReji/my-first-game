@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://buopxxkwfou38" path="res://scenes/platform_3.tscn" id="9_g1xgd"]
 [ext_resource type="FontFile" uid="uid://lc4lcu2bd0ur" path="res://assets/fonts/PixelOperator8.ttf" id="9_j8vkp"]
 [ext_resource type="PackedScene" uid="uid://bdv7wpadcps0b" path="res://scenes/platform_4.tscn" id="10_3n7tn"]
-[ext_resource type="Script" uid="uid://natleg4x2kes" path="res://scenes/level_exit.gd" id="10_oykdx"]
+[ext_resource type="Script" uid="uid://natleg4x2kes" path="res://scripts/level_exit.gd" id="10_oykdx"]
 [ext_resource type="Texture2D" uid="uid://coremrwf55ms7" path="res://assets/sprites/sprite-sheet.png" id="14_3n7tn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]

@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://dno476l5g7y8k"]
+
+[ext_resource type="Script" uid="uid://natleg4x2kes" path="res://scripts/level_exit.gd" id="1_3xln6"]
+[ext_resource type="Texture2D" uid="uid://bvnmrlydue5n4" path="res://assets/sprites/portal.png" id="2_g8ilb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pfk3"]
+size = Vector2(14.625, 28.5)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3awl"]
+atlas = ExtResource("2_g8ilb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ku1j"]
+atlas = ExtResource("2_g8ilb")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f31uk"]
+atlas = ExtResource("2_g8ilb")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnai3"]
+atlas = ExtResource("2_g8ilb")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8kv5"]
+atlas = ExtResource("2_g8ilb")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxn3v"]
+atlas = ExtResource("2_g8ilb")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1pfk3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3awl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ku1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f31uk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gnai3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8kv5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dxn3v")
+}],
+"loop": 1,
+"name": &"portal",
+"speed": 8.0
+}]
+
+[node name="LevelExit" type="Area2D" unique_id=626949891]
+collision_mask = 2
+script = ExtResource("1_3xln6")
+next_level = "uid://biodmv7bdp7iu"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=198466209]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_1pfk3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2059260954]
+position = Vector2(-1.0000029, 0.9999919)
+scale = Vector2(1.609375, 1.0273432)
+sprite_frames = SubResource("SpriteFrames_1pfk3")
+animation = &"portal"
+autoplay = "portal"
+frame_progress = 0.6840493
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
