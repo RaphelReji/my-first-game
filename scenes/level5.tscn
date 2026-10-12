@@ -1386,17 +1386,19 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="Labels" unique_id=1131203194]
 anchors_preset = -1
-anchor_right = 0.035590276
+anchor_top = -0.010802469
+anchor_right = 0.036458332
 anchor_bottom = -0.010802469
-offset_left = 181.0
-offset_top = -252.0
-offset_right = 233.0
-offset_bottom = -233.0
+offset_left = 185.0
+offset_top = -246.0
+offset_right = 237.0
+offset_bottom = -227.0
 theme_override_colors/font_color = Color(0.73, 0.73, 0.73, 1)
 theme_override_fonts/font = ExtResource("9_su468")
 theme_override_font_sizes/font_size = 8
 text = "Danger ahead!!"
 horizontal_alignment = 1
+vertical_alignment = 1
 autowrap_mode = 3
 metadata/_edit_use_anchors_ = true
 
@@ -1436,7 +1438,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Label5" type="Label" parent="Labels" unique_id=1208539445]
 anchors_preset = -1
-anchor_top = -0.010802469
+anchor_top = -0.012345679
 anchor_right = 0.010416667
 anchor_bottom = -0.012345679
 offset_left = 1241.0

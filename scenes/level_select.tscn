@@ -232,6 +232,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Level 5"
 
+[node name="Level6Button" type="Button" parent="LevelGrid" unique_id=215444050]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 6"
+
 [node name="TileMap" type="TileMap" parent="." unique_id=1048184457]
 z_index = -1
 tile_set = SubResource("TileSet_rif6e")
@@ -247,3 +252,4 @@ layer_1/tile_data = PackedInt32Array(-2883579, 0, 0)
 [connection signal="pressed" from="LevelGrid/Level3Button" to="." method="_on_level_3_button_pressed"]
 [connection signal="pressed" from="LevelGrid/Level4Button" to="." method="_on_level_4_button_pressed"]
 [connection signal="pressed" from="LevelGrid/Level5Button" to="." method="_on_level_5_button_pressed"]
+[connection signal="pressed" from="LevelGrid/Level6Button" to="." method="_on_level_6_button_pressed"]
