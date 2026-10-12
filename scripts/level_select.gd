@@ -27,3 +27,7 @@ func _on_level_4_button_pressed() -> void:
 
 func _on_level_5_button_pressed() -> void:
 	open_level(5)
+
+
+func _on_button_1_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/open_main.tscn")
