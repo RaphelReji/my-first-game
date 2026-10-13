@@ -188,10 +188,10 @@ text = "menu"
 
 [node name="Title" type="Label" parent="." unique_id=1206005374]
 layout_mode = 0
-offset_left = 426.0
-offset_top = 22.0
-offset_right = 557.0
-offset_bottom = 58.0
+offset_left = 428.0
+offset_top = 21.0
+offset_right = 559.0
+offset_bottom = 57.0
 text = "SELECT LEVEL"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -237,6 +237,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Level 6"
 
+[node name="Level7Button" type="Button" parent="LevelGrid" unique_id=2080134730]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Level 7"
+
 [node name="TileMap" type="TileMap" parent="." unique_id=1048184457]
 z_index = -1
 tile_set = SubResource("TileSet_rif6e")
@@ -253,3 +258,4 @@ layer_1/tile_data = PackedInt32Array(-2883579, 0, 0)
 [connection signal="pressed" from="LevelGrid/Level4Button" to="." method="_on_level_4_button_pressed"]
 [connection signal="pressed" from="LevelGrid/Level5Button" to="." method="_on_level_5_button_pressed"]
 [connection signal="pressed" from="LevelGrid/Level6Button" to="." method="_on_level_6_button_pressed"]
+[connection signal="pressed" from="LevelGrid/Level7Button" to="." method="_on_level_7_button_pressed"]

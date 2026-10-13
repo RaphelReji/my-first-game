@@ -1457,7 +1457,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(1270, -723)
 collision_mask = 2
 script = ExtResource("10_ylt8s")
-next_level = "uid://biodmv7bdp7iu"
+next_level = "uid://bekt7ph1q28l0"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelExit" unique_id=844023930]
 position = Vector2(2.671875, -41.8125)
