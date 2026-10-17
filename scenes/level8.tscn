@@ -1446,6 +1446,7 @@ script = ExtResource("1_6i030")
 
 [node name="ScoreLabel" type="Label" parent="GameManager" unique_id=449216631]
 anchors_preset = -1
+anchor_left = -0.015625
 anchor_right = -0.015625
 anchor_bottom = 0.009259259
 offset_left = 846.0
@@ -1777,7 +1778,7 @@ position = Vector2(837, -53)
 scale = Vector2(0.84947056, 2.3880405)
 collision_mask = 2
 script = ExtResource("11_76dty")
-next_level = "uid://biodmv7bdp7iu"
+next_level = "uid://dgr30eji7288b"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LevelExit" unique_id=844023930]
 position = Vector2(0.5, -40.5)

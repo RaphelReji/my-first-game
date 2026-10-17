@@ -288,7 +288,7 @@ theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_colors/font_outline_color = Color(0.7470902, 0, 0.4834036, 1)
 theme_override_fonts/font = ExtResource("3_kuxum")
 theme_override_font_sizes/font_size = 32
-text = "Run Again
+text = "Run Again..
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -297,8 +297,8 @@ vertical_alignment = 1
 layout_mode = 0
 offset_left = 510.0
 offset_top = 259.0
-offset_right = 638.0
-offset_bottom = 350.0
+offset_right = 644.0
+offset_bottom = 342.0
 
 [node name="Button1" type="Button" parent="MainGrid" unique_id=1323588700]
 layout_mode = 2
