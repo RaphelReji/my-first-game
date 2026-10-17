@@ -273,3 +273,4 @@ layer_1/tile_data = PackedInt32Array(-2883579, 0, 0)
 [connection signal="pressed" from="LevelGrid/Level5Button" to="." method="_on_level_5_button_pressed"]
 [connection signal="pressed" from="LevelGrid/Level6Button" to="." method="_on_level_6_button_pressed"]
 [connection signal="pressed" from="LevelGrid/Level7Button" to="." method="_on_level_7_button_pressed"]
+[connection signal="pressed" from="LevelGrid/Level8Button" to="." method="_on_level_8_button_pressed"]
