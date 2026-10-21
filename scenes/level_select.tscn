@@ -404,52 +404,70 @@ text = "Level 1
 
 [node name="Level2Button" type="Button" parent="LevelGrid" unique_id=1399165320]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.32941177, 0.96862745, 0.7921569, 1)
+theme_override_colors/font_hover_color = Color(0.97587764, 0.050708726, 0.050708726, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 theme_override_font_sizes/font_size = 16
 text = "Level 2"
 
 [node name="Level3Button" type="Button" parent="LevelGrid" unique_id=188611810]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.3137255, 0.92156863, 0.7607843, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 theme_override_font_sizes/font_size = 16
 text = "Level 3"
 
 [node name="Level4Button" type="Button" parent="LevelGrid" unique_id=1060256371]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.3019608, 0.8862745, 0.7372549, 1)
+theme_override_colors/font_hover_color = Color(0.98130625, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 theme_override_font_sizes/font_size = 16
 text = "Level 4"
 
 [node name="Level5Button" type="Button" parent="LevelGrid" unique_id=1537444061]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.38109186, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0.99735785, 0, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 theme_override_font_sizes/font_size = 16
 text = "Level 5"
 
 [node name="Level6Button" type="Button" parent="LevelGrid" unique_id=215444050]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.38039216, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 theme_override_font_sizes/font_size = 16
 text = "Level 6"
 
 [node name="Level7Button" type="Button" parent="LevelGrid" unique_id=2080134730]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.38039216, 0, 1)
+theme_override_colors/font_hover_color = Color(0.98130625, 1, 0, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 theme_override_font_sizes/font_size = 16
 text = "Level 7"
 
 [node name="Level8Button" type="Button" parent="LevelGrid" unique_id=1644486341]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0.97859687, 0, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 text = "Level 8"
 
 [node name="Level9Button" type="Button" parent="LevelGrid" unique_id=1282181738]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 text = "Level 9"
 
 [node name="Level10Button" type="Button" parent="LevelGrid" unique_id=697151066]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
 theme_override_fonts/font = ExtResource("2_2epne")
 text = "Level 10"
 
@@ -467,10 +485,10 @@ position = Vector2(163, 109.00001)
 scale = Vector2(8.370635, 9.512414)
 sprite_frames = SubResource("SpriteFrames_1pfk3")
 autoplay = "default"
-frame_progress = 0.02856478
+frame_progress = 0.17904946
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=1277247205]
-position = Vector2(50, 609)
+position = Vector2(53, 566)
 scale = Vector2(-1.6618618, 5.0914097)
 sprite_frames = SubResource("SpriteFrames_chg43")
 autoplay = "default"
@@ -486,7 +504,7 @@ position = Vector2(1042, 121)
 scale = Vector2(10.765235, 12.15459)
 sprite_frames = SubResource("SpriteFrames_tkg2v")
 autoplay = "default"
-frame_progress = 0.58083445
+frame_progress = 0.7313162
 
 [connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="LevelGrid/Level1Button" to="." method="_on_level_1_button_pressed"]
