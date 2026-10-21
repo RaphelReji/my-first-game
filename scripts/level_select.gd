@@ -43,3 +43,11 @@ func _on_level_7_button_pressed() -> void:
 
 func _on_level_8_button_pressed() -> void:
 	open_level(8)
+
+
+func _on_level_9_button_pressed() -> void:
+	open_level(9)
+
+
+func _on_level_10_button_pressed() -> void:
+	open_level(10)
