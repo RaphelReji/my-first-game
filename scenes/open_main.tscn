@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b88y6yxfgns3v" path="res://assets/sprites/world_tileset.png" id="2_qjjjc"]
 [ext_resource type="FontFile" uid="uid://dbl4iqeesn402" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_kuxum"]
 [ext_resource type="FontFile" uid="uid://lc4lcu2bd0ur" path="res://assets/fonts/PixelOperator8.ttf" id="4_vybvt"]
+[ext_resource type="Texture2D" uid="uid://byvmlk38edgdp" path="res://assets/sprites/knight.png" id="5_xyfco"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kuxum"]
 texture = ExtResource("2_qjjjc")
@@ -266,11 +267,78 @@ texture = ExtResource("2_qjjjc")
 [sub_resource type="TileSet" id="TileSet_1pfk3"]
 sources/0 = SubResource("TileSetAtlasSource_kuxum")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_wbkpf"]
+atlas = ExtResource("5_xyfco")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrtdn"]
+atlas = ExtResource("5_xyfco")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5rg7"]
+atlas = ExtResource("5_xyfco")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_byp2p"]
+atlas = ExtResource("5_xyfco")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yduxm"]
+atlas = ExtResource("5_xyfco")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r82vm"]
+atlas = ExtResource("5_xyfco")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56pvc"]
+atlas = ExtResource("5_xyfco")
+region = Rect2(192, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyf0o"]
+atlas = ExtResource("5_xyfco")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1pfk3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wbkpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrtdn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5rg7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_byp2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yduxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r82vm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56pvc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dyf0o")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="open_main" type="Control" unique_id=701477018]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 43.0
+offset_top = 26.0
+offset_right = 83.0
+offset_bottom = 66.0
+size_flags_vertical = 4
 script = ExtResource("1_yeolj")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=257058293]
@@ -279,33 +347,47 @@ tile_map_data = PackedByteArray("AAAAAAAAAAADAA8AAAAAAAEAAAADAA8AAAABAAEAAAADAA8
 tile_set = SubResource("TileSet_1pfk3")
 
 [node name="Title" type="Label" parent="." unique_id=167236407]
+modulate = Color(15.308351, 17.05207, 17.48376, 1)
 layout_mode = 1
-anchors_preset = 13
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = 242.0
-offset_top = 81.0
-offset_right = 866.0
-offset_bottom = 172.0
+anchor_bottom = 0.5
+offset_left = 178.0
+offset_top = 44.0
+offset_right = 958.0
+offset_bottom = 206.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.9297003, 0.78611296, 0.92199904, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.98200005)
-theme_override_colors/font_outline_color = Color(5.9721584, 15.622215, 17.180204, 0.75900006)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.998)
+theme_override_colors/font_outline_color = Color(88.80874, 231.89333, 66.517586, 1)
+theme_override_constants/line_spacing = 2
+theme_override_constants/shadow_offset_x = 13
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 7
 theme_override_fonts/font = ExtResource("3_kuxum")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 80
 text = "Run Again..
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MainGrid" type="GridContainer" parent="." unique_id=1218766439]
-layout_mode = 0
-offset_left = 459.0
-offset_top = 263.0
-offset_right = 627.0
-offset_bottom = 347.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 382.0
+offset_top = 268.0
+offset_right = 630.0
+offset_bottom = 384.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MainGrid" unique_id=1005196977]
 layout_mode = 2
@@ -313,18 +395,26 @@ alignment = 1
 
 [node name="Button1" type="Button" parent="MainGrid/VBoxContainer" unique_id=1323588700]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0.816975, 1, 1)
-theme_override_colors/font_hover_color = Color(18.261759, 18.352497, 18.442616, 1)
-theme_override_colors/icon_normal_color = Color(0, 16.497047, 0, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("4_vybvt")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 48
 text = "Play"
 
 [node name="Button2" type="Button" parent="MainGrid/VBoxContainer" unique_id=183222800]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.97269243, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.1680183, 0.9499975, 0.9499975, 1)
 theme_override_fonts/font = ExtResource("4_vybvt")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 48
 text = "Levels"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1634739623]
+position = Vector2(879.99994, 423)
+scale = Vector2(-12.127191, 14.475682)
+sprite_frames = SubResource("SpriteFrames_1pfk3")
+autoplay = "default"
+frame_progress = 0.15079105
 
 [connection signal="pressed" from="MainGrid/VBoxContainer/Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="MainGrid/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
