@@ -893,6 +893,7 @@ offset_left = 11.0
 offset_top = 13.0
 offset_right = 81.0
 offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("9_es5f0")
 text = "Menu"
 
 [connection signal="pressed" from="GameUI/SelectLevelButton" to="GameUI" method="_on_select_level_button_pressed"]

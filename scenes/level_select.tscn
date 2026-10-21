@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bbt3pg1sw1m1j" path="res://scripts/level_select.gd" id="1_3shnc"]
 [ext_resource type="FontFile" uid="uid://dbl4iqeesn402" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_2epne"]
+[ext_resource type="FontFile" uid="uid://lc4lcu2bd0ur" path="res://assets/fonts/PixelOperator8.ttf" id="2_7plkq"]
 [ext_resource type="Texture2D" uid="uid://b88y6yxfgns3v" path="res://assets/sprites/world_tileset.png" id="2_p0wlc"]
 [ext_resource type="Texture2D" uid="uid://byvmlk38edgdp" path="res://assets/sprites/knight.png" id="4_rif6e"]
 [ext_resource type="Texture2D" uid="uid://dgxsp1b4s41dx" path="res://assets/sprites/fruit.png" id="5_chg43"]
@@ -368,7 +369,9 @@ offset_left = 30.0
 offset_top = 25.0
 offset_right = 83.0
 offset_bottom = 61.0
-text = "menu"
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("2_7plkq")
+text = "Menu"
 
 [node name="Title" type="Label" parent="." unique_id=1206005374]
 layout_mode = 0

@@ -414,7 +414,7 @@ position = Vector2(879.99994, 423)
 scale = Vector2(-12.127191, 14.475682)
 sprite_frames = SubResource("SpriteFrames_1pfk3")
 autoplay = "default"
-frame_progress = 0.15079105
+frame_progress = 0.2419536
 
 [connection signal="pressed" from="MainGrid/VBoxContainer/Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="MainGrid/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

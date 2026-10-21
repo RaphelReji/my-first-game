@@ -494,6 +494,7 @@ offset_left = 11.0
 offset_top = 13.0
 offset_right = 81.0
 offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("9_g8vcy")
 text = "Menu"
 
 [connection signal="body_entered" from="LevelExit" to="LevelExit" method="_on_body_entered"]
