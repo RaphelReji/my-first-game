@@ -12,12 +12,9 @@ This is my first game, and I made it while learning Godot and game development.
 
 | Key | Action |
 |---|---|
-| W | Jump |
-| A | Move left |
-| D | Move right |
-| Space | Jump |
-| Left Arrow | Move left |
-| Right Arrow | Move right |
+| W / Space | Jump |
+| A / Left Arrow | Move left |
+| D / Right Arrow | Move right |
 
 ## Built with
 
@@ -27,4 +24,14 @@ This is my first game, and I made it while learning Godot and game development.
 ## Play the game
 
 [Play Run Again on itch.io](https://raphelreji.itch.io/run-again)
+
+## Windows Release
+
+[Download Run Again for Windows](https://github.com/RaphelReji/my-first-game/releases/tag/v1.0.0)
+
+Download the ZIP, extract it and run the game.
+
+## Screenshot
+
+![Run Again gameplay](screenshots/gameplay.png)
 
