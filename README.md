@@ -35,3 +35,13 @@ Download the ZIP, extract it and run the game.
 
 ![Run Again gameplay](screenshots/gameplay.png)
 
+
+
+## Credits
+
+- **Tutorial:** [Brackeys - How to make a Video Game](https://www.youtube.com/watch?v=LOhfqjmasi0)
+- **Asset Pack:** [Brackeys Platformer Bundle](https://brackeysgames.itch.io/brackeys-platformer-bundle)
+
+This game was made as a learning project while I was learning Godot. I used the tutorial and asset pack as learning resources while building Run Again.
+
+
